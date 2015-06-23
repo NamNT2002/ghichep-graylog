@@ -21,7 +21,7 @@ daemon.*;mail.*;\\
         *.=notice;*.=warn       |/dev/xconsole
 \$template GRAYLOG,"<%pri%>1 %timegenerated:::date-rfc3339% %fromhost% %app-name% %procid% %msg%\n"
 \$template GRAYLOGRFC5424,"<%pri%>%protocol-version% %timestamp:::date-rfc3339% %HOSTNAME% %app-name% %procid% %msg%\n"
-$PreserveFQDN on
+\$PreserveFQDN on
 *.* @$IP_GRAYLOG:10514;GRAYLOG
 EOF
 
